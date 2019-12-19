@@ -46,7 +46,7 @@ const server = new ApolloServer({
 server.applyMiddleware({ app, path: '/graphql' });
 
 // docker run -d -p 27017:27017 -v ~/data:/data/db mongo
-
+// docker run -d -p 27017:27017 -v C:\Users\A548298\Documents\projects\mongo-data:/data/db mongo
 app.listen(5000, () => {
     mongoose.connect(
         'mongodb://localhost:27017/graphql',
